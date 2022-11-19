@@ -1,0 +1,9 @@
+@use "../abstracts/color" as *;
+
+.urlInput {
+	width: 80vh;
+	height: 6vh;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
