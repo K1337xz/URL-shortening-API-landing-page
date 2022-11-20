@@ -91,10 +91,41 @@ nav .login .loginNav li.signUp a {
 
 .urlInput {
   width: 80vh;
-  height: 6vh;
+  height: 5vh;
   border-radius: 10px;
   border: none;
   outline: none;
+  padding-left: 4rem;
+}
+
+.shorturlButton {
+  width: 15vh;
+  height: 5vh;
+  margin-left: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(180deg, 66%, 49%);
+  cursor: pointer;
+}
+.shorturlButton:hover {
+  background-color: rgb(141, 228, 228);
+  mix-blend-mode: normal;
+}
+
+.copyButton {
+  background-color: hsl(180deg, 66%, 49%);
+  border: none;
+  outline: none;
+  height: 4vh;
+  width: 35%;
+  border-radius: 5px;
+  margin-left: 2rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 body {
@@ -176,9 +207,177 @@ body {
   background: url(../images/bg-shorten-desktop.svg), hsl(257deg, 27%, 26%);
 }
 .middleContent .shortUrl .error {
-  display: flex;
+  display: none;
   width: 78%;
   margin-bottom: -2rem;
   font-size: 13px;
   color: hsl(0deg, 87%, 67%);
+}
+.middleContent .linksWrapper {
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+.middleContent .linksWrapper .shortenLinks {
+  width: 100%;
+}
+.middleContent .linksWrapper .shortenLinks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 1rem;
+  background-color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: hsl(260deg, 8%, 14%);
+}
+.middleContent .linksWrapper .shortenLinks li .shortLink {
+  color: hsl(180deg, 66%, 49%);
+  width: 25%;
+}
+.middleContent .statisticsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.middleContent .statisticsContent .statisticTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.middleContent .statisticsContent .statisticTop h2 {
+  font-weight: 700;
+  font-size: 35px;
+}
+.middleContent .statisticsContent .statisticTop p {
+  width: 36%;
+  text-align: center;
+  color: hsl(257deg, 7%, 63%);
+}
+.middleContent .statisticsContainers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.middleContent .statisticsWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 38vh;
+  height: 28vh;
+  background-color: hsl(0deg, 0%, 100%);
+  z-index: 2;
+  padding: 2rem;
+}
+.middleContent .statisticsWrap:nth-child(2) {
+  margin-top: 5rem;
+}
+.middleContent .statisticsWrap:nth-child(3) {
+  margin-top: 10rem;
+}
+.middleContent .statisticsWrap h3 {
+  margin-top: -1rem;
+  color: hsl(260deg, 8%, 14%);
+}
+.middleContent .statisticsWrap p {
+  margin-top: 1rem;
+  color: hsl(257deg, 7%, 63%);
+  font-size: 16px;
+}
+.middleContent .imageTop {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(255deg, 11%, 22%);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: -38px;
+  left: 25px;
+}
+.middleContent .connectLine {
+  position: absolute;
+  display: block;
+  height: 1vh;
+  width: 50%;
+  background-color: hsl(180deg, 66%, 49%);
+  z-index: 1;
+}
+
+.bottomContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 26vh;
+  background: url(../images/bg-boost-desktop.svg), hsl(257deg, 27%, 26%);
+}
+.bottomContent h3 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 40px;
+}
+.bottomContent a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  width: 10%;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: hsl(180deg, 66%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 2rem;
+}
+.bottomContent a:hover {
+  background-color: rgb(141, 228, 228);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 35vh;
+  background-color: hsl(260deg, 8%, 14%);
+}
+footer .footerContent img {
+  fill: aqua;
+}
+footer .footerNav {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-top: 4rem;
+}
+footer .footerNavItems {
+  display: flex;
+  gap: 4rem;
+}
+footer .footerNavItems li {
+  list-style: none;
+}
+footer .footerNavItems a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+footer .attribution {
+  width: 100%;
+}
+footer .socials {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
 }/*# sourceMappingURL=style.css.map */

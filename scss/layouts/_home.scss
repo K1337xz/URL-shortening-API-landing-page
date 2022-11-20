@@ -77,11 +77,179 @@ body {
 		margin-top: -4rem;
 		background: url(../images/bg-shorten-desktop.svg), $darkviolet;
 		.error {
-			display: flex;
+			display: none;
 			width: 78%;
 			margin-bottom: -2rem;
 			font-size: 13px;
 			color: $red;
 		}
+	}
+	.linksWrapper {
+		display: flex;
+		align-items: center;
+		width: 55%;
+		.shortenLinks {
+			width: 100%;
+			li {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				list-style-type: none;
+				padding: 1rem;
+				background-color: $white;
+				margin-bottom: 1rem;
+				margin-top: 1rem;
+				border-radius: 10px;
+				color: $veryDarkViolet;
+				.shortLink {
+					color: $cyan;
+					width: 25%;
+				}
+			}
+		}
+	}
+	.statisticsContent {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 4rem;
+		.statisticTop {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			h2 {
+				font-weight: 700;
+				font-size: 35px;
+			}
+			p {
+				width: 36%;
+				text-align: center;
+				color: $grayishViolet;
+			}
+		}
+	}
+	.statisticsContainers {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		margin-bottom: 4rem;
+	}
+	.statisticsWrap {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 38vh;
+		height: 28vh;
+		background-color: $white;
+		z-index: 2;
+		padding: 2rem;
+		&:nth-child(2) {
+			margin-top: 5rem;
+		}
+		&:nth-child(3) {
+			margin-top: 10rem;
+		}
+		h3 {
+			margin-top: -1rem;
+			color: $veryDarkViolet;
+		}
+		p {
+			margin-top: 1rem;
+			color: $grayishViolet;
+			font-size: 16px;
+		}
+	}
+	.imageTop {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $veryDarkBlue;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		top: -38px;
+		left: 25px;
+	}
+	.connectLine {
+		position: absolute;
+		display: block;
+		height: 1vh;
+		width: 50%;
+		background-color: $cyan;
+		z-index: 1;
+	}
+}
+.bottomContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 26vh;
+	background: url(../images/bg-boost-desktop.svg), $darkviolet;
+	h3 {
+		color: $white;
+		font-size: 40px;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 5vh;
+		width: 10%;
+		border-radius: 50px;
+		text-decoration: none;
+		background-color: $cyan;
+		color: $white;
+		margin-top: 2rem;
+		&:hover {
+			background-color: rgba(141, 228, 228);
+		}
+	}
+}
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 35vh;
+	background-color: $veryDarkViolet;
+	.footerContent {
+		img {
+			fill: aqua;
+		}
+	}
+	.footerNav {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		margin-top: 4rem;
+	}
+	.footerNavItems {
+		display: flex;
+		gap: 4rem;
+		li {
+			list-style: none;
+		}
+		a {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+	.attribution {
+		width: 100%;
+	}
+	.socials {
+		width: 40%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 1rem;
 	}
 }
