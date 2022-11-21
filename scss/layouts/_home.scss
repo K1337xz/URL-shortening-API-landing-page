@@ -238,6 +238,7 @@ footer {
 			list-style: none;
 		}
 		a {
+			font-weight: 700;
 			color: $white;
 			text-decoration: none;
 		}
@@ -251,5 +252,23 @@ footer {
 		align-items: flex-start;
 		justify-content: center;
 		gap: 1rem;
+		a {
+			text-decoration: none;
+			color: $white;
+			height: 20%;
+			&:hover {
+				color: $cyan;
+			}
+		}
+	}
+	.secondUl {
+		margin-top: 1rem;
+		a {
+			font-weight: 500;
+			color: $Gray;
+			&:hover {
+				color: $cyan;
+			}
+		}
 	}
 }
