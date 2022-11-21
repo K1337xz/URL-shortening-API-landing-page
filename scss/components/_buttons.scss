@@ -35,4 +35,7 @@
 	color: $white;
 	font-weight: 700;
 	cursor: pointer;
+	&:hover {
+		background-color: rgb(141, 228, 228);
+	}
 }
