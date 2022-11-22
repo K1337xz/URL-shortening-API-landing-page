@@ -29,7 +29,7 @@
 	border: none;
 	outline: none;
 	height: 4vh;
-	width: 35%;
+	width: 25%;
 	border-radius: 5px;
 	margin-left: 2rem;
 	color: $white;
@@ -37,5 +37,8 @@
 	cursor: pointer;
 	&:hover {
 		background-color: rgb(141, 228, 228);
+	}
+	&.copied {
+		background-color: $darkviolet;
 	}
 }

@@ -101,9 +101,12 @@ body {
 				margin-top: 1rem;
 				border-radius: 10px;
 				color: $veryDarkViolet;
+				font-size: 15px;
 				.shortLink {
+					display: flex;
+					justify-content: flex-end;
+					width: 50%;
 					color: $cyan;
-					width: 25%;
 				}
 			}
 		}
