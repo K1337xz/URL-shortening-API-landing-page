@@ -97,6 +97,302 @@
 		.linksWrapper {
 			display: flex;
 			align-items: center;
+			width: 100%;
+			.shortenLinks {
+				width: 100%;
+				li {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					flex-direction: column;
+					list-style-type: none;
+					padding: 1rem;
+					background-color: $white;
+					margin-bottom: 1rem;
+					margin-top: 1rem;
+					border-radius: 10px;
+					color: $veryDarkViolet;
+					font-size: 15px;
+					.shortLink {
+						display: flex;
+						justify-content: flex-end;
+						width: 50%;
+						color: $cyan;
+						margin-top: 1rem;
+						border-top: 1px solid $Gray;
+						padding-top: 1rem;
+					}
+				}
+			}
+		}
+		.statisticsContent {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 4rem;
+			.statisticTop {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				h2 {
+					font-weight: 700;
+					font-size: 35px;
+				}
+				p {
+					width: 70%;
+					text-align: center;
+					color: $grayishViolet;
+				}
+			}
+		}
+		.statisticsContainers {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+			margin-bottom: 4rem;
+			margin-top: 5rem;
+		}
+		.statisticsWrap {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			width: 90%;
+			height: 40vh;
+			background-color: $white;
+			z-index: 2;
+			padding: 2rem;
+			&:nth-child(2) {
+				margin-top: 5rem;
+			}
+			&:nth-child(3) {
+				margin-top: 10rem;
+			}
+			h3 {
+				margin-top: -1rem;
+				color: $veryDarkViolet;
+			}
+			p {
+				margin-top: 1rem;
+				color: $grayishViolet;
+				font-size: 16px;
+			}
+		}
+		.imageTop {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $darkviolet;
+			border-radius: 50%;
+			width: 75px;
+			height: 75px;
+			top: -38px;
+			left: 39%;
+		}
+		.connectLine {
+			position: absolute;
+			display: block;
+			top: 180%;
+			height: 125%;
+			width: 1vh;
+			background-color: $cyan;
+			z-index: 1;
+		}
+	}
+	.bottomContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		height: 26vh;
+		background: url(../images/bg-boost-mobile.svg), $darkviolet;
+		background-position: center;
+		background-size: cover;
+		h3 {
+			color: $white;
+			font-size: 30px;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 6vh;
+			width: 40%;
+			border-radius: 50px;
+			text-decoration: none;
+			background-color: $cyan;
+			color: $white;
+			margin-top: 2rem;
+			&:hover {
+				background-color: rgba(141, 228, 228);
+			}
+		}
+	}
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100%;
+		background-color: $veryDarkViolet;
+		.footerContent {
+			img {
+				fill: aqua;
+			}
+		}
+		.footerNav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+			margin-top: 1rem;
+		}
+		.footerNavItems {
+			display: flex;
+			flex-direction: column;
+			gap: 0rem;
+			li {
+				list-style: none;
+			}
+			a {
+				font-weight: 700;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+		.attribution {
+			width: 100%;
+		}
+		.socials {
+			width: 40%;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 1rem;
+			a {
+				text-decoration: none;
+				color: $white;
+				height: 20%;
+				&:hover {
+					color: $cyan;
+				}
+			}
+		}
+		.secondUl {
+			margin-top: 1rem;
+			a {
+				font-weight: 500;
+				font-size: 14px;
+				color: $Gray;
+				&:hover {
+					color: $cyan;
+				}
+			}
+		}
+	}
+}
+
+@include md {
+	body {
+		height: 100%;
+		overflow-x: hidden;
+	}
+	.topContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column-reverse;
+		width: 100%;
+		height: 75vh;
+		.leftContent {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin-left: 0rem;
+			h1 {
+				color: $veryDarkBlue;
+				font-size: 25px;
+			}
+			p {
+				width: 60%;
+				color: $grayishViolet;
+				font-size: 15px;
+				font-weight: 500;
+			}
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 7vh;
+				width: 60%;
+				border-radius: 50px;
+				background-color: $cyan;
+				text-decoration: none;
+				color: $white;
+				margin-top: 2rem;
+				margin-bottom: 10rem;
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+		}
+		.rightContent {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			height: 55vh;
+			img {
+				margin-right: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.middleContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		background-color: #f0f1f6;
+		.shortUrl {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 85%;
+			height: 15vh;
+			border-radius: 15px;
+			margin-top: -4rem;
+			background: url(../images/bg-shorten-mobile.svg), $darkviolet;
+			background-repeat: no-repeat;
+			background-position: right;
+			.inpForm {
+				display: flex;
+				flex-direction: column;
+			}
+			.error {
+				display: none;
+				width: 78%;
+				margin-bottom: -2rem;
+				font-size: 13px;
+				color: $red;
+			}
+		}
+		.linksWrapper {
+			display: flex;
+			align-items: center;
 			width: 55%;
 			.shortenLinks {
 				width: 100%;
@@ -296,117 +592,8 @@
 		}
 	}
 }
-@include md {
-	header {
-		position: relative;
-		width: 100%;
-		height: 15vh;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		height: 15vh;
-		.leftNav {
-			display: flex;
-			align-items: flex-end;
-			width: 60%;
-			.navElements {
-				display: none;
-				flex-direction: row;
-				margin-left: 3rem;
-				li {
-					list-style: none;
-					padding: 1rem;
-					a {
-						text-decoration: none;
-						color: $grayishViolet;
-						font-weight: 500;
-						&:hover {
-							color: $veryDarkBlue;
-							font-weight: 700;
-						}
-					}
-				}
-			}
-		}
-		.login {
-			display: none;
-			align-items: center;
-			width: 15%;
-			.loginNav {
-				display: flex;
-				flex-direction: row;
-				margin-left: 3rem;
-				height: 4vh;
-				li {
-					display: flex;
-					align-items: center;
-					list-style: none;
-					padding: 1rem;
-					a {
-						text-decoration: none;
-						color: $grayishViolet;
-						font-weight: 500;
-						&:hover {
-							color: $veryDarkBlue;
-							font-weight: 700;
-						}
-					}
-					&.signUp {
-						background-color: $cyan;
-						border-radius: 50px;
-						cursor: pointer;
-						&:hover {
-							background-color: $cyan;
-							opacity: 0.5;
-							a {
-								color: $white;
-							}
-						}
-						a {
-							display: flex;
-							align-items: center;
-							height: 4vh;
-							width: 70px;
-							color: $white;
-						}
-					}
-				}
-			}
-		}
-		.openMobileMenu {
-			display: block;
-		}
-		.mobileMen {
-			position: fixed;
-			display: none;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			top: 10%;
-			width: 50%;
-			height: 40%;
-			border-radius: 15px;
-			background-color: $darkviolet;
-			li {
-				list-style: none;
-				padding: 1rem;
-				a {
-					text-decoration: none;
-					color: $grayishViolet;
-					font-weight: 500;
-					&:hover {
-						color: $veryDarkBlue;
-						font-weight: 700;
-					}
-				}
-			}
-		}
-	}
-}
-//desktop
-@include xl {
+//lap
+@include lg {
 	body {
 		height: 100%;
 		overflow-x: hidden;
@@ -426,7 +613,10 @@
 		.leftContent {
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
 			margin-left: 4rem;
+			text-align: left;
 			h1 {
 				color: $veryDarkBlue;
 				font-size: 85px;
@@ -459,6 +649,8 @@
 			width: 35%;
 			height: 55vh;
 			img {
+				width: auto;
+				height: auto;
 				margin-right: -4rem;
 			}
 		}
@@ -486,6 +678,10 @@
 				margin-bottom: -2rem;
 				font-size: 13px;
 				color: $red;
+			}
+			.inpForm {
+				display: flex;
+				flex-direction: row;
 			}
 		}
 		.linksWrapper {
@@ -540,8 +736,10 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-direction: row;
 			gap: 3rem;
 			margin-bottom: 4rem;
+			margin-top: 0rem;
 		}
 		.statisticsWrap {
 			position: relative;
@@ -641,6 +839,296 @@
 		}
 		.footerNavItems {
 			display: flex;
+			flex-direction: row;
+			gap: 4rem;
+			li {
+				list-style: none;
+			}
+			a {
+				font-weight: 700;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+		.attribution {
+			width: 100%;
+		}
+		.socials {
+			width: 40%;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 1rem;
+			a {
+				text-decoration: none;
+				color: $white;
+				height: 20%;
+				&:hover {
+					color: $cyan;
+				}
+			}
+		}
+		.secondUl {
+			margin-top: 1rem;
+			a {
+				font-weight: 500;
+				font-size: 17px;
+				color: $Gray;
+				&:hover {
+					color: $cyan;
+				}
+			}
+		}
+	}
+}
+//desktop
+@include xl {
+	body {
+		height: 100%;
+		overflow-x: hidden;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.topContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		width: 100%;
+		height: 75vh;
+		.leftContent {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			margin-left: 4rem;
+			text-align: left;
+			h1 {
+				color: $veryDarkBlue;
+				font-size: 85px;
+			}
+			p {
+				width: 60%;
+				color: $grayishViolet;
+				font-size: 20px;
+				font-weight: 500;
+			}
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 5vh;
+				width: 20%;
+				border-radius: 50px;
+				background-color: $cyan;
+				text-decoration: none;
+				color: $white;
+				margin-top: 2rem;
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+		}
+		.rightContent {
+			display: flex;
+			justify-content: center;
+			width: 35%;
+			height: 55vh;
+			img {
+				width: auto;
+				height: auto;
+				margin-right: -4rem;
+			}
+		}
+	}
+	.middleContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		background-color: #f0f1f6;
+		.shortUrl {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 58%;
+			height: 15vh;
+			border-radius: 15px;
+			margin-top: -4rem;
+			background: url(../images/bg-shorten-desktop.svg), $darkviolet;
+			.error {
+				display: none;
+				width: 60%;
+				margin-top: 1rem;
+				font-size: 13px;
+				color: $red;
+			}
+			.inpForm {
+				display: flex;
+				flex-direction: row;
+			}
+		}
+		.linksWrapper {
+			display: flex;
+			align-items: center;
+			width: 55%;
+			.shortenLinks {
+				width: 100%;
+				li {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					list-style-type: none;
+					padding: 1rem;
+					background-color: $white;
+					margin-bottom: 1rem;
+					margin-top: 1rem;
+					border-radius: 10px;
+					color: $veryDarkViolet;
+					font-size: 15px;
+					.shortLink {
+						display: flex;
+						justify-content: flex-end;
+						width: 50%;
+						color: $cyan;
+					}
+				}
+			}
+		}
+		.statisticsContent {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 4rem;
+			.statisticTop {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				h2 {
+					font-weight: 700;
+					font-size: 35px;
+				}
+				p {
+					width: 36%;
+					text-align: center;
+					color: $grayishViolet;
+				}
+			}
+		}
+		.statisticsContainers {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			gap: 3rem;
+			margin-bottom: 4rem;
+			margin-top: 0rem;
+		}
+		.statisticsWrap {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			width: 38vh;
+			height: 28vh;
+			background-color: $white;
+			z-index: 2;
+			padding: 2rem;
+			&:nth-child(2) {
+				margin-top: 5rem;
+			}
+			&:nth-child(3) {
+				margin-top: 10rem;
+			}
+			h3 {
+				margin-top: -1rem;
+				color: $veryDarkViolet;
+			}
+			p {
+				margin-top: 1rem;
+				color: $grayishViolet;
+				font-size: 16px;
+			}
+		}
+		.imageTop {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $veryDarkBlue;
+			border-radius: 50%;
+			width: 80px;
+			height: 80px;
+			top: -38px;
+			left: 25px;
+		}
+		.connectLine {
+			position: absolute;
+			display: block;
+			height: 1vh;
+			width: 50%;
+			background-color: $cyan;
+			z-index: 1;
+		}
+	}
+	.bottomContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		height: 26vh;
+		background: url(../images/bg-boost-desktop.svg), $darkviolet;
+		background-size: cover;
+		h3 {
+			color: $white;
+			font-size: 40px;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 5vh;
+			width: 10%;
+			border-radius: 50px;
+			text-decoration: none;
+			background-color: $cyan;
+			color: $white;
+			margin-top: 2rem;
+			&:hover {
+				background-color: rgba(141, 228, 228);
+			}
+		}
+	}
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 35vh;
+		background-color: $veryDarkViolet;
+		.footerContent {
+			img {
+				fill: aqua;
+			}
+		}
+		.footerNav {
+			display: flex;
+			flex-direction: row;
+			width: 50%;
+			margin-top: 4rem;
+		}
+		.footerNavItems {
+			display: flex;
+			flex-direction: row;
 			gap: 4rem;
 			li {
 				list-style: none;
