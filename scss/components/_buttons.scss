@@ -1,44 +1,50 @@
 @use "../abstracts/color" as *;
+@use "../abstracts/brakepoints" as *;
 
-.urlInput {
-	width: 80vh;
-	height: 5vh;
-	border-radius: 10px;
-	border: none;
-	outline: none;
-	padding-left: 4rem;
+@include sm {
 }
-.shorturlButton {
-	width: 15vh;
-	height: 5vh;
-	margin-left: 1rem;
-	border-radius: 10px;
-	border: none;
-	outline: none;
-	font-weight: 700;
-	color: $white;
-	background-color: $cyan;
-	cursor: pointer;
-	&:hover {
-		background-color: rgb(141, 228, 228);
-		mix-blend-mode: normal;
+
+@include xl {
+	.urlInput {
+		width: 80vh;
+		height: 5vh;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		padding-left: 4rem;
 	}
-}
-.copyButton {
-	background-color: $cyan;
-	border: none;
-	outline: none;
-	height: 4vh;
-	width: 25%;
-	border-radius: 5px;
-	margin-left: 2rem;
-	color: $white;
-	font-weight: 700;
-	cursor: pointer;
-	&:hover {
-		background-color: rgb(141, 228, 228);
+	.shorturlButton {
+		width: 15vh;
+		height: 5vh;
+		margin-left: 1rem;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		font-weight: 700;
+		color: $white;
+		background-color: $cyan;
+		cursor: pointer;
+		&:hover {
+			background-color: rgb(141, 228, 228);
+			mix-blend-mode: normal;
+		}
 	}
-	&.copied {
-		background-color: $darkviolet;
+	.copyButton {
+		background-color: $cyan;
+		border: none;
+		outline: none;
+		height: 4vh;
+		width: 25%;
+		border-radius: 5px;
+		margin-left: 2rem;
+		color: $white;
+		font-weight: 700;
+		cursor: pointer;
+		&:hover {
+			background-color: rgb(141, 228, 228);
+		}
+		&.copied {
+			background-color: $darkviolet;
+		}
 	}
 }

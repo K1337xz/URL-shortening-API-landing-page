@@ -1,23 +1,100 @@
 @use "../abstracts/color" as *;
-
+@use "../abstracts/brakepoints" as *;
 //top navigation
-header {
-	width: 100%;
-	height: 15vh;
-}
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	height: 15vh;
-	.leftNav {
+
+@include sm {
+	header {
+		position: relative;
+		width: 100%;
+		height: 15vh;
+	}
+	nav {
 		display: flex;
-		align-items: flex-end;
-		width: 60%;
-		.navElements {
+		align-items: center;
+		justify-content: space-around;
+		height: 15vh;
+		.leftNav {
 			display: flex;
-			flex-direction: row;
-			margin-left: 3rem;
+			align-items: flex-end;
+			width: 60%;
+			.navElements {
+				display: none;
+				flex-direction: row;
+				margin-left: 3rem;
+				li {
+					list-style: none;
+					padding: 1rem;
+					a {
+						text-decoration: none;
+						color: $grayishViolet;
+						font-weight: 500;
+						&:hover {
+							color: $veryDarkBlue;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+		.login {
+			display: none;
+			align-items: center;
+			width: 15%;
+			.loginNav {
+				display: flex;
+				flex-direction: row;
+				margin-left: 3rem;
+				height: 4vh;
+				li {
+					display: flex;
+					align-items: center;
+					list-style: none;
+					padding: 1rem;
+					a {
+						text-decoration: none;
+						color: $grayishViolet;
+						font-weight: 500;
+						&:hover {
+							color: $veryDarkBlue;
+							font-weight: 700;
+						}
+					}
+					&.signUp {
+						background-color: $cyan;
+						border-radius: 50px;
+						cursor: pointer;
+						&:hover {
+							background-color: $cyan;
+							opacity: 0.5;
+							a {
+								color: $white;
+							}
+						}
+						a {
+							display: flex;
+							align-items: center;
+							height: 4vh;
+							width: 70px;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		.openMobileMenu {
+			display: block;
+		}
+		.mobileMen {
+			position: fixed;
+			display: none;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			top: 10%;
+			width: 50%;
+			height: 40%;
+			border-radius: 15px;
+			background-color: $darkviolet;
 			li {
 				list-style: none;
 				padding: 1rem;
@@ -33,18 +110,102 @@ nav {
 			}
 		}
 	}
-	.login {
+}
+
+@include md {
+	header {
+		position: relative;
+		width: 100%;
+		height: 15vh;
+	}
+	nav {
 		display: flex;
 		align-items: center;
-		width: 15%;
-		.loginNav {
+		justify-content: space-around;
+		height: 15vh;
+		.leftNav {
 			display: flex;
-			flex-direction: row;
-			margin-left: 3rem;
-			height: 4vh;
-			li {
+			align-items: flex-end;
+			width: 60%;
+			.navElements {
+				display: none;
+				flex-direction: row;
+				margin-left: 3rem;
+				li {
+					list-style: none;
+					padding: 1rem;
+					a {
+						text-decoration: none;
+						color: $grayishViolet;
+						font-weight: 500;
+						&:hover {
+							color: $veryDarkBlue;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+		.login {
+			display: none;
+			align-items: center;
+			width: 15%;
+			.loginNav {
 				display: flex;
-				align-items: center;
+				flex-direction: row;
+				margin-left: 3rem;
+				height: 4vh;
+				li {
+					display: flex;
+					align-items: center;
+					list-style: none;
+					padding: 1rem;
+					a {
+						text-decoration: none;
+						color: $grayishViolet;
+						font-weight: 500;
+						&:hover {
+							color: $veryDarkBlue;
+							font-weight: 700;
+						}
+					}
+					&.signUp {
+						background-color: $cyan;
+						border-radius: 50px;
+						cursor: pointer;
+						&:hover {
+							background-color: $cyan;
+							opacity: 0.5;
+							a {
+								color: $white;
+							}
+						}
+						a {
+							display: flex;
+							align-items: center;
+							height: 4vh;
+							width: 70px;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		.openMobileMenu {
+			display: block;
+		}
+		.mobileMen {
+			position: fixed;
+			display: none;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			top: 10%;
+			width: 50%;
+			height: 40%;
+			border-radius: 15px;
+			background-color: $darkviolet;
+			li {
 				list-style: none;
 				padding: 1rem;
 				a {
@@ -56,26 +217,181 @@ nav {
 						font-weight: 700;
 					}
 				}
-				&.signUp {
-					background-color: $cyan;
-					border-radius: 50px;
-					cursor: pointer;
-					&:hover {
-						background-color: $cyan;
-						opacity: 0.5;
-						a {
-							color: $white;
-						}
-					}
+			}
+		}
+	}
+}
+@include lg {
+	header {
+		width: 100%;
+		height: 15vh;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 15vh;
+		.leftNav {
+			display: flex;
+			align-items: flex-end;
+			width: 60%;
+			.navElements {
+				display: flex;
+				flex-direction: row;
+				margin-left: 3rem;
+				li {
+					list-style: none;
+					padding: 1rem;
 					a {
-						display: flex;
-						align-items: center;
-						height: 4vh;
-						width: 70px;
-						color: $white;
+						text-decoration: none;
+						color: $grayishViolet;
+						font-weight: 500;
+						&:hover {
+							color: $veryDarkBlue;
+							font-weight: 700;
+						}
 					}
 				}
 			}
+		}
+		.login {
+			display: flex;
+			align-items: center;
+			width: 15%;
+			.loginNav {
+				display: flex;
+				flex-direction: row;
+				margin-left: 3rem;
+				height: 4vh;
+				li {
+					display: flex;
+					align-items: center;
+					list-style: none;
+					padding: 1rem;
+					a {
+						text-decoration: none;
+						color: $grayishViolet;
+						font-weight: 500;
+						&:hover {
+							color: $veryDarkBlue;
+							font-weight: 700;
+						}
+					}
+					&.signUp {
+						background-color: $cyan;
+						border-radius: 50px;
+						cursor: pointer;
+						&:hover {
+							background-color: $cyan;
+							opacity: 0.5;
+							a {
+								color: $white;
+							}
+						}
+						a {
+							display: flex;
+							align-items: center;
+							height: 4vh;
+							width: 70px;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		.openMobileMenu {
+			display: none;
+		}
+		.mobileMen {
+			display: none;
+		}
+	}
+}
+
+//desktop
+@include xl {
+	header {
+		width: 100%;
+		height: 15vh;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 15vh;
+		.leftNav {
+			display: flex;
+			align-items: flex-end;
+			width: 60%;
+			.navElements {
+				display: flex;
+				flex-direction: row;
+				margin-left: 3rem;
+				li {
+					list-style: none;
+					padding: 1rem;
+					a {
+						text-decoration: none;
+						color: $grayishViolet;
+						font-weight: 500;
+						&:hover {
+							color: $veryDarkBlue;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+		.login {
+			display: flex;
+			align-items: center;
+			width: 15%;
+			.loginNav {
+				display: flex;
+				flex-direction: row;
+				margin-left: 3rem;
+				height: 4vh;
+				li {
+					display: flex;
+					align-items: center;
+					list-style: none;
+					padding: 1rem;
+					a {
+						text-decoration: none;
+						color: $grayishViolet;
+						font-weight: 500;
+						&:hover {
+							color: $veryDarkBlue;
+							font-weight: 700;
+						}
+					}
+					&.signUp {
+						background-color: $cyan;
+						border-radius: 50px;
+						cursor: pointer;
+						&:hover {
+							background-color: $cyan;
+							opacity: 0.5;
+							a {
+								color: $white;
+							}
+						}
+						a {
+							display: flex;
+							align-items: center;
+							height: 4vh;
+							width: 70px;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		.openMobileMenu {
+			display: none;
+		}
+		.mobileMen {
+			display: none;
 		}
 	}
 }
