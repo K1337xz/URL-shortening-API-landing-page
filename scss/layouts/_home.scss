@@ -711,6 +711,7 @@
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+					flex-direction: row;
 					list-style-type: none;
 					padding: 1rem;
 					background-color: $white;
@@ -722,8 +723,13 @@
 					.shortLink {
 						display: flex;
 						justify-content: flex-end;
+						flex-direction: row;
+						align-items: center;
 						width: 50%;
 						color: $cyan;
+						border: none;
+						margin-top: 0;
+						padding-top: 0;
 					}
 				}
 			}
@@ -750,6 +756,7 @@
 			}
 		}
 		.statisticsContainers {
+			position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -803,6 +810,7 @@
 			display: block;
 			height: 1vh;
 			width: 50%;
+			top: 50%;
 			background-color: $cyan;
 			z-index: 1;
 		}

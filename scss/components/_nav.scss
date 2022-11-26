@@ -109,16 +109,27 @@
 				border-radius: 15px;
 				background-color: $darkviolet;
 				z-index: 999;
+				.navElementsMob {
+					border-bottom: 1px solid $grayishViolet;
+					width: 75%;
+				}
 				li {
 					list-style: none;
 					padding: 1rem;
 					a {
 						text-decoration: none;
 						color: $grayishViolet;
-						font-weight: 500;
+						font-weight: 700;
+						color: $white;
 						&:hover {
 							color: $veryDarkBlue;
 							font-weight: 700;
+						}
+					}
+					&.signUp {
+						a {
+							background-color: $cyan;
+							width: 50%;
 						}
 					}
 				}

@@ -115,6 +115,10 @@
     background-color: hsl(257deg, 27%, 26%);
     z-index: 999;
   }
+  nav .mobileMen .mobileMenItems .navElementsMob {
+    border-bottom: 1px solid hsl(257deg, 7%, 63%);
+    width: 75%;
+  }
   nav .mobileMen .mobileMenItems li {
     list-style: none;
     padding: 1rem;
@@ -122,11 +126,16 @@
   nav .mobileMen .mobileMenItems li a {
     text-decoration: none;
     color: hsl(257deg, 7%, 63%);
-    font-weight: 500;
+    font-weight: 700;
+    color: hsl(0deg, 0%, 100%);
   }
   nav .mobileMen .mobileMenItems li a:hover {
     color: hsl(255deg, 11%, 22%);
     font-weight: 700;
+  }
+  nav .mobileMen .mobileMenItems li.signUp a {
+    background-color: hsl(180deg, 66%, 49%);
+    width: 50%;
   }
 }
 @media (min-width: 600px) {
@@ -540,6 +549,7 @@
     width: 25%;
     border-radius: 5px;
     margin-left: 2rem;
+    margin-top: auto;
     color: hsl(0deg, 0%, 100%);
     font-weight: 700;
     cursor: pointer;
@@ -1300,6 +1310,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     list-style-type: none;
     padding: 1rem;
     background-color: hsl(0deg, 0%, 100%);
@@ -1312,8 +1323,13 @@
   .middleContent .linksWrapper .shortenLinks li .shortLink {
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
     width: 50%;
     color: hsl(180deg, 66%, 49%);
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
   }
   .middleContent .statisticsContent {
     display: flex;
@@ -1337,6 +1353,7 @@
     color: hsl(257deg, 7%, 63%);
   }
   .middleContent .statisticsContainers {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1390,6 +1407,7 @@
     display: block;
     height: 1vh;
     width: 50%;
+    top: 50%;
     background-color: hsl(180deg, 66%, 49%);
     z-index: 1;
   }
