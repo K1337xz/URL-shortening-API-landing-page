@@ -585,6 +585,7 @@
     width: 25%;
     border-radius: 5px;
     margin-left: 2rem;
+    margin-top: 0rem;
     color: hsl(0deg, 0%, 100%);
     font-weight: 700;
     cursor: pointer;
@@ -1586,6 +1587,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     list-style-type: none;
     padding: 1rem;
     background-color: hsl(0deg, 0%, 100%);
@@ -1598,7 +1600,12 @@
   .middleContent .linksWrapper .shortenLinks li .shortLink {
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    border: none;
     width: 50%;
+    margin-top: auto;
+    padding-top: auto;
     color: hsl(180deg, 66%, 49%);
   }
   .middleContent .statisticsContent {
@@ -1623,6 +1630,7 @@
     color: hsl(257deg, 7%, 63%);
   }
   .middleContent .statisticsContainers {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1675,6 +1683,7 @@
     display: block;
     height: 1vh;
     width: 50%;
+    top: 50%;
     background-color: hsl(180deg, 66%, 49%);
     z-index: 1;
   }
