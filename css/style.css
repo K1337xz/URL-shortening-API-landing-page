@@ -819,6 +819,7 @@
     color: hsl(257deg, 7%, 63%);
   }
   .middleContent .statisticsContainers {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -872,8 +873,8 @@
   .middleContent .connectLine {
     position: absolute;
     display: block;
-    top: 170vh;
-    height: 122%;
+    top: 23dvh;
+    height: 100dvh;
     width: 1vh;
     background-color: hsl(180deg, 66%, 49%);
     z-index: 1;
@@ -1463,10 +1464,10 @@
     justify-content: center;
     background-color: hsl(255deg, 11%, 22%);
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    top: -38px;
-    left: 35%;
+    width: 70px;
+    height: 70px;
+    top: -43px;
+    left: 40%;
   }
   .middleContent .connectLine {
     position: absolute;
@@ -1757,10 +1758,10 @@
     justify-content: center;
     background-color: hsl(255deg, 11%, 22%);
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    top: -38px;
-    left: 35%;
+    width: 70px;
+    height: 70px;
+    top: -43px;
+    left: 40%;
   }
   .middleContent .connectLine {
     position: absolute;

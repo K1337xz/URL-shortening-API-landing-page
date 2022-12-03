@@ -150,6 +150,7 @@
 			}
 		}
 		.statisticsContainers {
+			position: relative;
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
@@ -203,8 +204,8 @@
 		.connectLine {
 			position: absolute;
 			display: block;
-			top: 168dvh;
-			height: 122%;
+			top: 23dvh;
+			height: 100dvh;
 			width: 1vh;
 			background-color: $cyan;
 			z-index: 1;
