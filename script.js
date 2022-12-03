@@ -2,6 +2,9 @@ const shortUrlButton = document.querySelector(".shorturlButton");
 const linkLists = document.querySelector(".shortenLinks");
 const error = document.querySelector(".error");
 let urlInput = document.querySelector(".urlInput");
+const openMobile = document.querySelector(".openMobileMenu");
+const closeMobile = document.querySelector(".closeMobile");
+const mobileMen = document.querySelector(".mobileMen");
 //load api
 
 async function loadApi() {
@@ -58,4 +61,13 @@ function copyUrl(id) {
 	clickedBtn.value = `Copied!`;
 	navigator.clipboard.writeText(clickedBtn.parentNode.textContent);
 }
+//open Mobile
+openMobile.addEventListener("click", () => {
+	mobileMen.style.display = `flex`;
+});
+
+closeMobile.addEventListener("click", () => {
+	mobileMen.style.display = `none`;
+});
+
 shortUrlButton.addEventListener("click", showShortUrl);

@@ -90,7 +90,7 @@
   }
   nav .mobileMen {
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -100,6 +100,22 @@
     /* border-radius: 15px; */
     z-index: 999;
     background: rgba(0, 0, 0, 0.67);
+  }
+  nav .mobileMen .loginNavMob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  nav .mobileMen .loginNavMob .signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 6dvh;
+    background-color: hsl(180deg, 66%, 49%);
+    border-radius: 20px;
   }
   nav .mobileMen .mobileMenItems {
     position: fixed;
@@ -114,6 +130,12 @@
     border-radius: 15px;
     background-color: hsl(257deg, 27%, 26%);
     z-index: 999;
+  }
+  nav .mobileMen .mobileMenItems .closeMobile {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    color: hsl(0deg, 0%, 100%);
   }
   nav .mobileMen .mobileMenItems .navElementsMob {
     border-bottom: 1px solid hsl(257deg, 7%, 63%);
@@ -135,7 +157,6 @@
   }
   nav .mobileMen .mobileMenItems li.signUp a {
     background-color: hsl(180deg, 66%, 49%);
-    width: 50%;
   }
 }
 @media (min-width: 600px) {
@@ -227,24 +248,69 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 15px; */
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.67);
+  }
+  nav .mobileMen .loginNavMob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  nav .mobileMen .loginNavMob .signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 6dvh;
+    background-color: hsl(180deg, 66%, 49%);
+    border-radius: 20px;
+  }
+  nav .mobileMen .mobileMenItems {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     top: 10%;
-    width: 50%;
-    height: 40%;
+    width: 85%;
+    height: 55%;
     border-radius: 15px;
     background-color: hsl(257deg, 27%, 26%);
+    z-index: 999;
   }
-  nav .mobileMen li {
+  nav .mobileMen .mobileMenItems .closeMobile {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    color: hsl(0deg, 0%, 100%);
+  }
+  nav .mobileMen .mobileMenItems .navElementsMob {
+    border-bottom: 1px solid hsl(257deg, 7%, 63%);
+    width: 75%;
+  }
+  nav .mobileMen .mobileMenItems li {
     list-style: none;
     padding: 1rem;
   }
-  nav .mobileMen li a {
+  nav .mobileMen .mobileMenItems li a {
     text-decoration: none;
     color: hsl(257deg, 7%, 63%);
-    font-weight: 500;
+    font-weight: 700;
+    color: hsl(0deg, 0%, 100%);
   }
-  nav .mobileMen li a:hover {
+  nav .mobileMen .mobileMenItems li a:hover {
     color: hsl(255deg, 11%, 22%);
     font-weight: 700;
+  }
+  nav .mobileMen .mobileMenItems li.signUp a {
+    background-color: hsl(180deg, 66%, 49%);
   }
 }
 @media (min-width: 992px) {
